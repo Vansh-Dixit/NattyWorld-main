@@ -8,7 +8,7 @@ const Diets = () => {
 	const [activeIndex, setIndex] = useState(0);
 	const [isLoading, setIsLoading] = useState(false);
 	useEffect(() => {
-		setIsLoading(true);
+		setIsLoading(true); 
 		const fetchDiet = async () => {
 			await fetch("https://nattyworld-server.onrender.com/api/v1/diet/dietList")
 				.then(async (res) => {
